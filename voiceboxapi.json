@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "VoiceBox API",
+    "_postman_id": "abc12345",
+    "description": "Full CRUD for all entities",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        { "name": "Get All Users", "request": { "method": "GET", "url": "http://localhost:8080/users" } },
+        { "name": "Create User", "request": { "method": "POST", "url": "http://localhost:8080/users", "body": { "mode": "raw", "raw": "{\"firstName\":\"John\"}" } } }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        { "name": "Get All Categories", "request": { "method": "GET", "url": "http://localhost:8080/categories" } }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "item": [
+        { "name": "Get All Feedback", "request": { "method": "GET", "url": "http://localhost:8080/feedback" } }
+      ]
+    },
+    {
+      "name": "Tags",
+      "item": [
+        { "name": "Get All Tags", "request": { "method": "GET", "url": "http://localhost:8080/tags" } }
+      ]
+    },
+    {
+      "name": "Roles",
+      "item": [
+        { "name": "Get All Roles", "request": { "method": "GET", "url": "http://localhost:8080/roles" } }
+      ]
+    },
+    {
+      "name": "Votes",
+      "item": [
+        { "name": "Get All Votes", "request": { "method": "GET", "url": "http://localhost:8080/votes" } }
+      ]
+    }
+  ]
+}

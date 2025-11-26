@@ -1,0 +1,28 @@
+package com.project.voicebox.demo.service;
+
+import com.project.voicebox.demo.entity.CategoryEntity;
+import com.project.voicebox.demo.repository.CategoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class CategoryService {
+
+    @Autowired
+    private CategoryRepository repo;
+
+    public List<CategoryEntity> getAll() { return repo.findAll(); }
+
+    public CategoryEntity getById(int id) { return repo.findById(id).orElse(null); }
+
+    public CategoryEntity add(CategoryEntity c) { return repo.save(c); }
+
+    public CategoryEntity update(int id, CategoryEntity c) {
+        c.setCategoryId(id);
+        return repo.save(c);
+    }
+
+    public void delete(int id) { repo.deleteById(id); }
+}
