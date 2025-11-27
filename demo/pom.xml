@@ -8,11 +8,11 @@
 		<version>4.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.project.voicebox</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.appdevg5</groupId>
+	<artifactId>bebitas-fan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Voice Box</name>
+	<description>Online Suggestion submission for Both Students and Staffs</description>
 	<url/>
 	<licenses>
 		<license/>
