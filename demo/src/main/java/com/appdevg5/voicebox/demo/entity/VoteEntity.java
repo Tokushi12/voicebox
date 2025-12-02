@@ -7,42 +7,42 @@ public class VoteEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int voteId;
+    private Integer voteId;
 
-    private int userId;
-    private int feedbackId;
+    private Integer userId;
+    private Integer feedbackId;
     private String voteType;
 
     public VoteEntity() {}
 
-    public VoteEntity(int voteId, int userId, int feedbackId, String voteType) {
+    public VoteEntity(Integer voteId, Integer userId, Integer feedbackId, String voteType) {
         this.voteId = voteId;
         this.userId = userId;
         this.feedbackId = feedbackId;
         this.voteType = voteType;
     }
 
-    public int getVoteId() {
+    public Integer getVoteId() {
         return voteId;
     }
 
-    public void setVoteId(int voteId) {
+    public void setVoteId(Integer voteId) {
         this.voteId = voteId;
     }
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
-    public int getFeedbackId() {
+    public Integer getFeedbackId() {
         return feedbackId;
     }
 
-    public void setFeedbackId(int feedbackId) {
+    public void setFeedbackId(Integer feedbackId) {
         this.feedbackId = feedbackId;
     }
 

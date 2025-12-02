@@ -7,24 +7,24 @@ public class RoleEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int roleId;
+    private Integer roleId;
 
     private String name;
     private String description;
 
     public RoleEntity() {}
 
-    public RoleEntity(int roleId, String name, String description) {
+    public RoleEntity(Integer roleId, String name, String description) {
         this.roleId = roleId;
         this.name = name;
         this.description = description;
     }
 
-    public int getRoleId() {
+    public Integer getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(int roleId) {
+    public void setRoleId(Integer roleId) {
         this.roleId = roleId;
     }
 

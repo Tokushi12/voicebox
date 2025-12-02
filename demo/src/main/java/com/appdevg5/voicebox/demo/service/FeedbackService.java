@@ -15,14 +15,14 @@ public class FeedbackService {
 
     public List<FeedbackEntity> getAll() { return repo.findAll(); }
 
-    public FeedbackEntity getById(int id) { return repo.findById(id).orElse(null); }
+    public FeedbackEntity getById(Integer id) { return repo.findById(id).orElse(null); }
 
     public FeedbackEntity add(FeedbackEntity f) { return repo.save(f); }
 
-    public FeedbackEntity update(int id, FeedbackEntity f) {
+    public FeedbackEntity update(Integer id, FeedbackEntity f) {
         f.setFeedbackId(id);
         return repo.save(f);
     }
 
-    public void delete(int id) { repo.deleteById(id); }
+    public void delete(Integer id) { repo.deleteById(id); }
 }

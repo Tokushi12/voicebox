@@ -7,42 +7,44 @@ public class FeedbackEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int feedbackId;
+    private Integer feedbackId;
 
-    private int userId;
+    private Integer userId;
     private String title;
     private String feedbackDesc;
-    private int categoryId;
+    private String category;  // Changed from int categoryId to String category
+    private String author;    // Added author field
     private String status;
     private int upVotesCount;
     private int downVotesCount;
 
     public FeedbackEntity() {}
 
-    public FeedbackEntity(int feedbackId, int userId, String title, String feedbackDesc, int categoryId, String status, int upVotesCount, int downVotesCount) {
+    public FeedbackEntity(Integer feedbackId, Integer userId, String title, String feedbackDesc, String category, String author, String status, int upVotesCount, int downVotesCount) {
         this.feedbackId = feedbackId;
         this.userId = userId;
         this.title = title;
         this.feedbackDesc = feedbackDesc;
-        this.categoryId = categoryId;
+        this.category = category;
+        this.author = author;
         this.status = status;
         this.upVotesCount = upVotesCount;
         this.downVotesCount = downVotesCount;
     }
 
-    public int getFeedbackId() {
+    public Integer getFeedbackId() {
         return feedbackId;
     }
 
-    public void setFeedbackId(int feedbackId) {
+    public void setFeedbackId(Integer feedbackId) {
         this.feedbackId = feedbackId;
     }
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
@@ -62,12 +64,20 @@ public class FeedbackEntity {
         this.feedbackDesc = feedbackDesc;
     }
 
-    public int getCategoryId() {
-        return categoryId;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getStatus() {

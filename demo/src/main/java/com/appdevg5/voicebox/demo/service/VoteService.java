@@ -15,14 +15,14 @@ public class VoteService {
 
     public List<VoteEntity> getAll() { return repo.findAll(); }
 
-    public VoteEntity getById(int id) { return repo.findById(id).orElse(null); }
+    public VoteEntity getById(Integer id) { return repo.findById(id).orElse(null); }
 
     public VoteEntity add(VoteEntity v) { return repo.save(v); }
 
-    public VoteEntity update(int id, VoteEntity v) {
+    public VoteEntity update(Integer id, VoteEntity v) {
         v.setVoteId(id);
         return repo.save(v);
     }
 
-    public void delete(int id) { repo.deleteById(id); }
+    public void delete(Integer id) { repo.deleteById(id); }
 }

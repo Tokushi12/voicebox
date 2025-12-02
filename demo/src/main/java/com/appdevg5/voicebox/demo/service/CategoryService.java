@@ -15,14 +15,14 @@ public class CategoryService {
 
     public List<CategoryEntity> getAll() { return repo.findAll(); }
 
-    public CategoryEntity getById(int id) { return repo.findById(id).orElse(null); }
+    public CategoryEntity getById(Integer id) { return repo.findById(id).orElse(null); }
 
     public CategoryEntity add(CategoryEntity c) { return repo.save(c); }
 
-    public CategoryEntity update(int id, CategoryEntity c) {
+    public CategoryEntity update(Integer id, CategoryEntity c) {
         c.setCategoryId(id);
         return repo.save(c);
     }
 
-    public void delete(int id) { repo.deleteById(id); }
+    public void delete(Integer id) { repo.deleteById(id); }
 }

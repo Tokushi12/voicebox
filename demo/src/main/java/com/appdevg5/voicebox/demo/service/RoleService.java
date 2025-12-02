@@ -15,14 +15,14 @@ public class RoleService {
 
     public List<RoleEntity> getAll() { return repo.findAll(); }
 
-    public RoleEntity getById(int id) { return repo.findById(id).orElse(null); }
+    public RoleEntity getById(Integer id) { return repo.findById(id).orElse(null); }
 
     public RoleEntity add(RoleEntity r) { return repo.save(r); }
 
-    public RoleEntity update(int id, RoleEntity r) {
+    public RoleEntity update(Integer id, RoleEntity r) {
         r.setRoleId(id);
         return repo.save(r);
     }
 
-    public void delete(int id) { repo.deleteById(id); }
+    public void delete(Integer id) { repo.deleteById(id); }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/roles")
-@CrossOrigin(origins = "http://localhost:3306")
+@CrossOrigin(origins = "http://localhost:3000")
 public class RoleController {
 
     @Autowired
@@ -19,16 +19,16 @@ public class RoleController {
     public List<RoleEntity> getAll() { return service.getAll(); }
 
     @GetMapping("/{id}")
-    public RoleEntity getOne(@PathVariable int id) { return service.getById(id); }
+    public RoleEntity getOne(@PathVariable Integer id) { return service.getById(id); }
 
     @PostMapping
     public RoleEntity create(@RequestBody RoleEntity entity) { return service.add(entity); }
 
     @PutMapping("/{id}")
-    public RoleEntity update(@PathVariable int id, @RequestBody RoleEntity entity) {
+    public RoleEntity update(@PathVariable Integer id, @RequestBody RoleEntity entity) {
         return service.update(id, entity);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id) { service.delete(id); }
+    public void delete(@PathVariable Integer id) { service.delete(id); }
 }

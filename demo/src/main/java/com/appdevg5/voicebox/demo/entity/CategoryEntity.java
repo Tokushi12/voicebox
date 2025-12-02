@@ -7,7 +7,7 @@ public class CategoryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int categoryId;
+    private Integer categoryId;
 
     private String name;
     private String description;
@@ -20,11 +20,11 @@ public class CategoryEntity {
         this.description = description;
     }
 
-    public int getCategoryId() {
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 

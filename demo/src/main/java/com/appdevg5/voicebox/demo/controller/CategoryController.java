@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/categories")
-@CrossOrigin(origins = "http://localhost:3306")
+@CrossOrigin(origins = "http://localhost:3000")
 public class CategoryController {
 
     @Autowired
@@ -19,16 +19,16 @@ public class CategoryController {
     public List<CategoryEntity> getAll() { return service.getAll(); }
 
     @GetMapping("/{id}")
-    public CategoryEntity getOne(@PathVariable int id) { return service.getById(id); }
+    public CategoryEntity getOne(@PathVariable Integer id) { return service.getById(id); }
 
     @PostMapping
     public CategoryEntity create(@RequestBody CategoryEntity entity) { return service.add(entity); }
 
     @PutMapping("/{id}")
-    public CategoryEntity update(@PathVariable int id, @RequestBody CategoryEntity entity) {
+    public CategoryEntity update(@PathVariable Integer id, @RequestBody CategoryEntity entity) {
         return service.update(id, entity);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id) { service.delete(id); }
+    public void delete(@PathVariable Integer id) { service.delete(id); }
 }
