@@ -14,7 +14,7 @@ public class CategoryEntity {
 
     public CategoryEntity() {}
 
-    public CategoryEntity(int categoryId, String name, String description) {
+    public CategoryEntity(Integer categoryId, String name, String description) {
         this.categoryId = categoryId;
         this.name = name;
         this.description = description;

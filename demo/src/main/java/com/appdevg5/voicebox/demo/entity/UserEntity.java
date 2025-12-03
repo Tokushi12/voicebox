@@ -17,7 +17,7 @@ public class UserEntity {
 
     public UserEntity() {}
 
-    public UserEntity(int userId, String firstName, String lastName, String idNumber, String userType, String userPassword) {
+    public UserEntity(Integer userId, String firstName, String lastName, String idNumber, String userType, String userPassword) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;

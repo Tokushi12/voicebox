@@ -1,0 +1,672 @@
+/* ============================================================================
+   LOGIN PAGE STYLES
+   ============================================================================ */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  /* Note: Local file paths like C:\Users... won't work on deployed sites. 
+     Move image to public/ or src/assets/ */
+  background-image: url(/src/images/3d-rendering-abstract-black-white-background.jpg);
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-input {
+  width: 92%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.login-input:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login-footer-button {
+  text-decoration: underline;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ============================================================================
+   SIGNUP PAGE STYLES
+   ============================================================================ */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  background-image: url(/src/images/3d-rendering-abstract-black-white-background.jpg);
+}
+
+.signup-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+}
+
+.signup-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-back-button {
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-back-button:hover {
+  text-decoration: underline;
+}
+
+.signup-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-input {
+  width: 92%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.signup-button-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.signup-button {
+  flex: 1;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+/* ============================================================================
+   HEADER STYLES
+   ============================================================================ */
+.header {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.header-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.875rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.header-toggle-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+/* ============================================================================
+   SIDEBAR STYLES
+   ============================================================================ */
+.sidebar {
+  width: 20rem;
+  background-color: white;
+  border-left: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.sidebar-user-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-user-info {
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-menu-button {
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-menu-button:hover {
+  background-color: #f3f4f6;
+}
+
+.sidebar-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sidebar-action-button {
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sidebar-action-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+.sidebar-logout-button {
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sidebar-logout-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+/* ============================================================================
+   POST CARD STYLES
+   ============================================================================ */
+.post-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.post-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post-card-content {
+  flex: 1;
+}
+
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.post-card-author {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.post-card-description {
+  color: #374151;
+}
+
+.post-card-votes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.post-card-vote-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.post-card-vote-emoji {
+  font-size: 1.25rem;
+}
+
+/* ============================================================================
+   MODAL STYLES
+   ============================================================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 48rem;
+  width: 100%;
+  position: relative;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.modal-close-button:hover {
+  background-color: #f3f4f6;
+}
+
+.modal-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.modal-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Create Suggestion Modal */
+.create-suggestion-modal-content {
+  max-width: 48rem;
+}
+
+.modal-input-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-input-col {
+  flex: 1;
+}
+
+.modal-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.modal-input {
+  width: 92%;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.modal-textarea {
+  width: 97%;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  border: none;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+  resize: vertical;
+}
+
+.modal-button {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+  float: right;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+/* View Post Modal */
+.view-post-modal-content {
+  max-width: 42rem;
+}
+
+.view-post-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.view-post-category {
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.view-post-author {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.view-post-description {
+  color: #374151;
+  margin-bottom: 1.5rem;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.view-post-vote-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vote-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+  border: none;
+  cursor: pointer;
+}
+
+.vote-button:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.vote-button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.vote-emoji {
+  font-size: 1.5rem;
+}
+
+.vote-count {
+  font-weight: bold;
+}
+
+.voted-message {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Update User Modal & Change Password Modal */
+.update-user-modal-content {
+  max-width: 28rem;
+}
+
+.modal-form-group {
+  margin-bottom: 1rem;
+}
+
+.modal-form-group-last {
+  margin-bottom: 1.5rem;
+}
+
+.modal-form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-form-button {
+  flex: 1;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal-form-button-primary {
+  background-color: #1b1b1b;
+}
+
+.modal-form-button-primary:hover {
+  background-color: #1f2937;
+}
+
+.modal-form-button-secondary {
+  background-color: #374151;
+}
+
+.modal-form-button-secondary:hover {
+  background-color: #4b5563;
+}
+
+.modal-form-button-cancel {
+  background-color: #1b1b1b;
+}
+
+.modal-form-button-cancel:hover {
+  background-color: #4b5563;
+}
+
+/* ============================================================================
+   MAIN LAYOUT STYLES
+   ============================================================================ */
+.main-container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.main-flex {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.latest-activity-section {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.create-suggestion-button {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.create-suggestion-button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+.latest-post {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.latest-post-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.latest-post-author {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.latest-post-description {
+  color: #374151;
+}
+
+.empty-state {
+  background-color: #f3f4f6;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.empty-state-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.all-posts-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-posts-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.all-posts-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 20rem;
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-posts-message {
+  background-color: #f3f4f6;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
